@@ -1,13 +1,13 @@
-# 🌿 Plant Disease Detection and Leaf Segmentation
+#  Plant Disease Detection and Leaf Segmentation
 A deep learning-based computer vision project that performs leaf segmentation and disease classification from plant images to support early diagnosis and crop health monitoring.
 ## Table of Contents
-- [Project Overview](#-project-overview)
+- [Project Overview](#project-overview)
 - [Part 1 – Classification (DenseNet121 / VGG16)](#part-1--classification-densenet121--vgg16)
 - [Part 2 – Segmentation (U-Net)](#part-2--segmentation-u-net)
 - [Part 3 – Demo Pipeline](#part-3--demo-pipeline)
-- [Team Members](#-team-members)
+- [Team Members](#team-members)
   
-# 🔍 Project Overview
+# Project Overview
 This project is divided into three main parts:
 
 1. Plant Disease Classification – Detect whether a plant is healthy or infected using enseNet121 and VGG16.
@@ -19,7 +19,7 @@ This project is divided into three main parts:
 #  Part 1 – Classification (DenseNet121 / VGG16)
 This notebook focuses on detecting the type of disease in a given leaf image using transfer learning.
 
-## ✅ Goals:
+## Goals:
 Classify leaves into 15 categories (healthy/diseased).
 
 * Use PlantVillage Dataset.
@@ -28,8 +28,8 @@ Classify leaves into 15 categories (healthy/diseased).
 
 * Apply data augmentation, normalization, and early stopping.
 
-## 📂 Datasets:
-📎[Kaggle](https://www.kaggle.com/datasets/emmarex/plantdisease)
+## Datasets:
+[Kaggle](https://www.kaggle.com/datasets/emmarex/plantdisease)
 
 ### Description:
 A large dataset containing over 20,000 images of healthy and diseased plant leaves across 15 classes.
@@ -65,7 +65,7 @@ The classification model is trained to recognize 15 distinct classes, including 
 
 * F1-score (macro avg): 0.94
 
-## 📊 Sample Metrics:
+## Sample Metrics:
 | Model       | Accuracy | Macro F1-score |
 | ----------- | -------- | -------------- |
 | VGG16       | 93%      | 0.92           |
@@ -75,15 +75,15 @@ The classification model is trained to recognize 15 distinct classes, including 
 
 We performs semantic segmentation to highlight diseased areas on the leaf surface using a U-Net architecture.
 
-## ✅ Goals:
+## Goals:
 * Detect pixel-level infected areas.
 
 * Visualize disease severity and spread.
 
 * Assist in precise diagnosis and treatment planning.
 
-## 📂 Datasets:
-📎[Kaggle](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset)
+## Datasets:
+[Kaggle](https://www.kaggle.com/datasets/fakhrealam9537/leaf-disease-segmentation-dataset)
 - **Description**:
   
   This dataset contains 588 plant leaf images showing disease symptoms, along with their corresponding segmentation masks (588 masks). 
@@ -96,13 +96,13 @@ We performs semantic segmentation to highlight diseased areas on the leaf surfac
 
 - **Augmented Data:**
   
-  To enhance the dataset and improve model performance, we applied data augmentation, resulting in:
+  We used the pre-augmented data provided in the aug_data folder of the dataset. This includes:
 
   - 2940 total images
 
   - 2940 corresponding masks
 
-## 🔧 Workflow:
+## Workflow:
 - Data preprocessing & augmentation.
 
 - U-Net model training.
@@ -114,7 +114,7 @@ We performs semantic segmentation to highlight diseased areas on the leaf surfac
 # Part 3 – Demo Pipeline
 A fully integrated notebook simulating a real-world tool for plant disease detection.
 
-## 🚀 What it Does:
+## What it Does:
 - Loads pre-trained classification and segmentation models.
 
 - Predicts disease type with confidence score.
@@ -124,7 +124,7 @@ A fully integrated notebook simulating a real-world tool for plant disease detec
 - Displays both results together for fast diagnosis.
 
 
-# 👥 Team Members
+# Team Members
 
 | Name           | GitHub                                                 |
 | -------------- | ------------------------------------------------------ |
